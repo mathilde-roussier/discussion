@@ -15,6 +15,13 @@
     <?php include 'include/header.php' ?>
 
     <main>
+
+        <?php if (isset($_SESSION['login'])) : ?>
+            <p> Salut <?php echo $_SESSION['login']." !"; ?> </p>
+        <?php else : ?>
+            <p> Salut toi ! </p>
+        <?php endif; ?>
+        
     </main>
 
     <?php include 'include/footer.php' ?>

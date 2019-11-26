@@ -30,6 +30,8 @@
 
             <input type='submit' name='connexion' value="Connexion" />
 
+            <?php include 'include/traitement_connexion.php' ?>
+
         </form>
 
     </main>
