@@ -17,9 +17,9 @@
     <main>
 
         <?php if (isset($_SESSION['login'])) : ?>
-            <p> Salut <?php echo $_SESSION['login']." !"; ?> </p>
+            <p> Salut <?php echo $_SESSION['login']." !"; ?>,<br> Bienvenue au bar clandestin "La plateforme" !</p>
         <?php else : ?>
-            <p> Salut toi ! </p>
+            <p> Salut toi,<br> Bienvenue au bar clandestin "La plateforme" !</p>
         <?php endif; ?>
         
     </main>
