@@ -32,16 +32,18 @@ include 'include/traitement_profil.php'
             </article>
 
             <article>
-                <label> Mot de passe </label>
+                <label> Nouveau mot de passe </label>
                 <input type='password' name='password' />
             </article>
 
             <article>
-                <label> Confirmation du mot de passe </label>
+                <label> Confirmation du nouveau mot de passe </label>
                 <input type='password' name='password_conf' />
             </article>
 
             <input type='submit' name='profil' value="Modifier" />
+
+            <?php include 'include/affichage_profil.php' ?>
 
         </form>
 
