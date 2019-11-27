@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-if(isset($_SESSION['login']))
-{}
+if (isset($_SESSION['login'])) 
+{ } 
 else header('Location:index.php');
 ?>
 
@@ -28,7 +28,7 @@ else header('Location:index.php');
             </article>
 
             <form method='POST' action='discussion.php'>
-                <input type="text" name="commentaire" placeholder='Votre commentaire...' />
+                <textarea name="commentaire" placeholder='Votre commentaire.. (140 max)' maxlength="140"></textarea>
 
                 <input type='submit' name='validation' value='Envoyer' />
 
