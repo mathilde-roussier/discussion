@@ -12,8 +12,7 @@
                 <li>
                     <form action='index.php' method='POST'>
                         <input type='submit' name='deconnexion' value='Deconnexion' />
-                        <?php if (isset($_POST['deconnexion'])) 
-                            {
+                        <?php if (isset($_POST['deconnexion'])) {
                                 session_destroy();
                                 header('Location:index.php');
                             }
