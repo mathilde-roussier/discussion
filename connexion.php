@@ -22,7 +22,7 @@ else header('Location:index.php');
 
     <main>
 
-        <form method='POST' action='connexion'>
+        <form method='POST' action='connexion.php'>
 
             <article>
                 <label> Login </label>
@@ -43,6 +43,7 @@ else header('Location:index.php');
     </main>
 
     <?php include 'include/footer.php' ?>
+
 </body>
 
 </html>

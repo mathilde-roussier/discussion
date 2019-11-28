@@ -16,12 +16,8 @@
 
     <main>
 
-        <?php if (isset($_SESSION['login'])) : ?>
-            <p> Salut <?php echo $_SESSION['login']." !"; ?>,<br> Bienvenue dans "The bar into the forest" !</p>
-        <?php else : ?>
-            <p> Salut toi,<br> Bienvenue dans "The bar into the forest" !</p>
-        <?php endif; ?>
-        
+        <p> TEST </p>
+
     </main>
 
     <?php include 'include/footer.php' ?>

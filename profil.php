@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-if(isset($_SESSION['login']))
-{}
+if (isset($_SESSION['login'])) 
+{ } 
 else header('Location:index.php');
 
 include 'include/traitement_profil.php'
@@ -24,33 +24,37 @@ include 'include/traitement_profil.php'
 
     <main>
 
-        <form method="POST" action="profil.php">
+        <section>
 
-            <article>
-                <label> Login </label>
-                <input type='text' name='login' value=<?php echo $resultat_recupdata['login']; ?> />
-            </article>
+            <form method="POST" action="profil.php">
 
-            <article>
-                <label> Mot de passe actuel </label>
-                <input type='password' name='old_password' required />
-            </article>
+                <article>
+                    <label> Login </label>
+                    <input type='text' name='login' value=<?php echo $resultat_recupdata['login']; ?> />
+                </article>
 
-            <article>
-                <label> Nouveau mot de passe </label>
-                <input type='password' name='password' />
-            </article>
+                <article>
+                    <label> Mot de passe actuel </label>
+                    <input type='password' name='old_password' required />
+                </article>
 
-            <article>
-                <label> Confirmation du nouveau mot de passe </label>
-                <input type='password' name='password_conf' />
-            </article>
+                <article>
+                    <label> Nouveau mot de passe </label>
+                    <input type='password' name='password' />
+                </article>
 
-            <input type='submit' name='profil' value="Modifier" />
+                <article>
+                    <label> Confirmation du nouveau mot de passe </label>
+                    <input type='password' name='password_conf' />
+                </article>
 
-            <?php include 'include/affichage_profil.php' ?>
+                <input type='submit' name='profil' value="Modifier" />
 
-        </form>
+                <?php include 'include/affichage_profil.php' ?>
+
+            </form>
+
+        </section>
 
     </main>
 

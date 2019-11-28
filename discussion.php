@@ -23,11 +23,11 @@ else header('Location:index.php');
     <main>
 
         <section>
-            <article>
+            <article class='discussion'>
                 <?php include 'include/traitement_discussion.php' ?>
             </article>
 
-            <form method='POST' action='discussion.php'>
+            <form class='commentaire' method='POST' action='discussion.php'>
                 <textarea name="commentaire" placeholder='Votre commentaire.. (140 max)' maxlength="140"></textarea>
 
                 <input type='submit' name='validation' value='Envoyer' />

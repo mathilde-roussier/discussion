@@ -24,12 +24,12 @@ if (isset($_POST['connexion']))
         }
         else
         {
-            echo "/!\ Erreur de mot de passe /!\\";
+            echo "<p> /!\ Erreur de mot de passe /!\\ </p>";
         }
     }
     else 
     {
-        echo "Cet utilisateur n'existe pas !";
+        echo "<p> Cet utilisateur n'existe pas ! </p>";
     }
     mysqli_close($connexion);
 }
