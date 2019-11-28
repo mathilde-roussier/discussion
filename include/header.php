@@ -2,6 +2,12 @@
 
 <header>
     <nav>
+
+        <aside>
+            <img src='img/beer.png' />
+            <h1> The bar <br> into the forest </h1>
+        </aside>
+
         <ul>
             <li><a href='index.php'> Accueil </a></li>
 

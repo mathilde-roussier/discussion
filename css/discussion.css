@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+
 html{
     display:flex;
     flex-direction: column;
@@ -44,6 +46,17 @@ a {
     color:black;
 }
 
+header aside{
+    align-self:center;
+    text-align:center;
+}
+
+nav{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
 nav input[type=submit] {
     border: none;
     background: transparent;
@@ -53,5 +66,15 @@ nav input[type=submit] {
 
 main{
     display:flex;
+    flex-direction : column;
+    justify-content: center;
     flex-grow:1;
+    color: white;
+    font-size:70px;
+}
+
+main p{
+    align-self:center;
+    text-align: center;
+    font-family: 'Modak', cursive;
 }
