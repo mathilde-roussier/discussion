@@ -42,6 +42,10 @@ a {
     color: black;
 }
 
+a:hover {
+    text-shadow: 1px 2px 2px rgb(14, 92, 27);
+}
+
 nav aside {
     align-self: center;
     text-align: center;
@@ -52,7 +56,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     font-family: 'Salsa', cursive;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 nav input[type=submit] {
@@ -82,7 +86,7 @@ header p {
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.4); */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -117,14 +121,16 @@ form {
     padding: 10px;
     border: solid rgb(97, 59, 32) 2px;
     font-family: 'Salsa', cursive;
-    font-size:25px;
+    font-size: 25px;
     font-weight: bold;
     color: rgb(97, 59, 32);
+    background: rgb(255, 255, 255, 0.6);
 }
 
 .commentaire {
     flex-direction: row;
     border: none;
+    background: none;
 }
 
 input:not([type=submit]) {
@@ -136,7 +142,7 @@ input:not([type=submit]) {
     border-radius: 20px 60px 20px 60px;
     color: rgb(97, 60, 33);
     font-weight: bold;
-    font-size:20px;
+    font-size: 20px;
 }
 
 textarea {
@@ -164,6 +170,7 @@ input:not([type=submit]):focus, textarea:focus {
     display: flex;
     flex-direction: column;
     width: 53.5%;
+    background: rgb(255, 255, 255, 0.6);
     border: solid 4px rgb(97, 59, 32);
     height: 60vh;
     overflow: auto;
@@ -181,8 +188,11 @@ input:not([type=submit]):focus, textarea:focus {
     flex-direction: column;
 }
 
-.discussion h1, .connect p {
+.discussion p {
     margin-bottom: 0;
+}
+
+.connect h1 {
     text-align: right;
 }
 
@@ -190,12 +200,8 @@ input:not([type=submit]):focus, textarea:focus {
     justify-content: flex-end;
 }
 
-.titre {
-    font-weight: bold;
-}
-
 figure {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -203,4 +209,22 @@ figure {
     color: red;
     font-weight: bold;
     font-size: 18pt;
+}
+
+.pseudo {
+    color: rgb(7, 66, 7);
+    font-weight: bold;
+}
+
+.intro p {
+    align-self: center;
+    text-align: center;
+    font-family: 'Salsa', cursive;
+    color: white;
+    font-size: 50px;
+}
+
+.intro img {
+    width: 300px;
+    height: 200px;
 }

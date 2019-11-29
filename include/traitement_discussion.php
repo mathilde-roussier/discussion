@@ -20,8 +20,8 @@ while ($i < $taille) {
 
         <aside class='connect'>
             <div>
-                <h1 class="titre"> <?php echo $login . " Le " . $date . " :" ?> </h1>
-                <p> <?php echo $messages[$i]['message'] ?> </p>
+                <p> <span class="pseudo"><?php echo $login ?></span> Le <?php echo $date . " :" ?> </p>
+                <h1> <?php echo $messages[$i]['message'] ?> </h1>
             </div>
         </aside>
 
@@ -29,8 +29,8 @@ while ($i < $taille) {
 
         <aside>
             <div>
-                <h1 class="titre"> <?php echo $login . " Le " . $date . " :" ?> </h1>
-                <p> <?php echo $messages[$i]['message'] ?> </p>
+                <p> <span class="pseudo"><?php echo $login ?></span> Le <?php echo $date . " :" ?> </p>
+                <h1> <?php echo $messages[$i]['message'] ?> </h1>
             </div>
         </aside>
 

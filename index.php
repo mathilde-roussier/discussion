@@ -14,9 +14,27 @@
 
     <?php include 'include/header.php' ?>
 
-    <main id='main'>
+    <main class='intro' id='main'>
 
-        <p> TEST </p>
+    <?php if (isset($_SESSION['login'])) {?>
+
+        <p> A présent tu peux accéder à la page discusion,
+            <br> tes amis t'y attendent ☺ </p>
+        <figure>
+            <img src='img/biere.png' />
+        </figure>
+        <p> Tu peux également modifier ton profil ! </p>
+
+    <?php } else { ?>
+
+        <p> Tu aimes la nature ? Tu aimes les bières ?
+            <br> Cet endroit est fait pour toi ☺ </p>
+        <figure>
+            <img src='img/biere.png' />
+        </figure>
+        <p> Inscrits toi vite si ce n'est pas déjà fait ! </p>
+        
+    <?php } ?>
 
     </main>
 
