@@ -14,16 +14,7 @@
 
             <li><a href='profil.php'> Profil </a></li>
             <li><a href='discussion.php'> Discussion </a></li>
-            <li>
-                <form action='index.php' method='POST'>
-                    <input type='submit' name='deconnexion' value='Deconnexion' />
-                    <?php if (isset($_POST['deconnexion'])) {
-                            session_destroy();
-                            header('Location:index.php');
-                        }
-                        ?>
-                </form>
-            </li>
+            <li><a href='include/deconnexion.php'> Déconnexion </a></li>
 
         <?php } else { ?>
 
@@ -38,7 +29,7 @@
 
     <?php
 
-    if (!empty(strstr($_SERVER['REQUEST_URI'], 'index.php'))) {
+    if (!empty(strstr($_SERVER['REQUEST_URI'], 'index.php')) || (empty(strstr($_SERVER['REQUEST_URI'], '.php')))) {
         if (isset($_SESSION['login'])) { ?>
             <p> Salut <?php echo $_SESSION['login']; ?>,<br> Bienvenue dans "The bar into the forest" !</p>
         <?php } else { ?>

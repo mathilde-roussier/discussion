@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
-
 html {
     display: flex;
     flex-direction: column;
@@ -7,6 +6,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     backdrop-filter: blur(3px);
+    height: 200vh;
 }
 
 body {
@@ -17,7 +17,6 @@ body {
     margin-bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
-    height:100vh;
 }
 
 nav, footer {
@@ -57,11 +56,12 @@ nav input[type=submit] {
     background: transparent;
     cursor: pointer;
     outline: none;
-} 
+}
 
 header {
     display: flex;
-    flex-grow: 0.1;
+    flex-grow: 0.3;
+    flex-basis: 47%;
     flex-direction: column;
     justify-content: center;
     background-image: url('../img/nature.jpg');
@@ -82,12 +82,13 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex-grow:0.9;
+    flex-grow: 0.7;
+    flex-basis: 53%;
 }
 
 section {
     display: flex;
-    flex-grow:1;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -95,11 +96,10 @@ section {
 
 article {
     display: flex;
-    margin-top:10px;
+    margin-top: 10px;
     flex-direction: column;
     justify-items: center;
-    align-items:center;
-    text-align: center;
+    align-items: center;
 }
 
 form {
@@ -144,21 +144,30 @@ input:not([type=submit]):focus, textarea:focus {
     background-color: rgba(122, 76, 43, 0.5);
 }
 
-.discussion{
-    display:flex;
-    justify-content: space-between;
-    width: 70%;
-    align-items: start;
+.discussion {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    width: 53.5%;
     border: solid 2px black;
 }
 
-.discussion p{
-    display:flex;
-    align-self:left;
+.discussion aside {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
 }
 
-.discussion aside{
-    align-self:stretch;
-    display:flex;
-    justify-content: space-between;
+.discussion div {
+    display: flex;
+    flex-direction: column;
+}
+
+.connect {
+    justify-content: flex-end;
+}
+
+.connect span {
+    text-align: right;
 }

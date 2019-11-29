@@ -1,7 +1,7 @@
 <!-- footer -->
 
 <footer>
-<nav>
+    <nav>
         <ul>
             <li><a href='index.php'> Accueil </a></li>
 
@@ -9,6 +9,7 @@
 
                 <li><a href='profil.php'> Profil </a></li>
                 <li><a href='discussion.php'> Discussion </a></li>
+                <li><a href='include/deconnexion.php'> Déconnexion </a></li>
 
             <?php else : ?>
 
@@ -17,5 +18,9 @@
 
             <?php endif; ?>
         </ul>
+
+        <aside>
+            <p>Copyright 2019 Coding School | All Rights Reserved | Project by Mathilde.</p>
+        </aside>
     </nav>
 </footer>

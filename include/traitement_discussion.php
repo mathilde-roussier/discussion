@@ -14,14 +14,28 @@ while ($i < $taille) {
     // Changement format date 
     $date = date('d/m/Y à H:i:s', strtotime($messages[$i]['date']));
     // Changement format login
-    $login = "@" . $messages[$i]['login']; ?>
+    $login = "@" . $messages[$i]['login'];
 
-    <aside>
-        <p> <?php echo $login . " : " . $messages[$i]['message'] ?> </p>
-        <p><?php echo " Le " . $date ?> </p>
-    </aside>
+    if ($messages[$i]['login'] == $_SESSION['login']) { ?>
 
-<?php $i = $i + 1;
+        <aside class='connect'>
+            <div>
+                <span> <?php echo $login . " Le " . $date . " :" ?> </span>
+                <span> <?php echo $messages[$i]['message'] ?> </span>
+            </div>
+        </aside>
+
+    <?php } else { ?>
+
+        <aside>
+            <div>
+                <span> <?php echo $login . " Le " . $date . ":" ?> </span>
+                <span> <?php echo $messages[$i]['message'] ?> </span>
+            </div>
+        </aside>
+
+<?php }
+    $i = $i + 1;
 }
 
 ?>
