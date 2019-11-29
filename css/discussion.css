@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Modak&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css?family=Salsa&display=swap');
 html {
     display: flex;
     flex-direction: column;
@@ -49,6 +51,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Salsa', cursive;
+    font-size: 20px;
 }
 
 nav input[type=submit] {
@@ -71,14 +75,14 @@ header {
 header p {
     align-self: center;
     text-align: center;
-    font-family: 'Modak', cursive;
+    font-family: 'Salsa', cursive;
     color: white;
     text-shadow: 2px 2px 2px rgb(7, 66, 7), 0 0 1em rgb(129, 60, 21), 0 0 0.2em rgb(78, 37, 13);
     font-size: 70px;
 }
 
 main {
-    background-color: rgb(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -91,7 +95,7 @@ section {
     flex-grow: 1;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 article {
@@ -104,14 +108,23 @@ article {
 
 form {
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
+    flex-grow: 0.5;
+    width: 40%;
+    align-self: center;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    border: solid rgb(97, 59, 32) 2px;
+    font-family: 'Salsa', cursive;
+    font-size:25px;
+    font-weight: bold;
+    color: rgb(97, 59, 32);
 }
 
 .commentaire {
     flex-direction: row;
+    border: none;
 }
 
 input:not([type=submit]) {
@@ -123,6 +136,7 @@ input:not([type=submit]) {
     border-radius: 20px 60px 20px 60px;
     color: rgb(97, 60, 33);
     font-weight: bold;
+    font-size:20px;
 }
 
 textarea {
@@ -138,6 +152,7 @@ input[type=submit] {
     color: white;
     font-size: 18pt;
     border-width: 10px;
+    outline: none;
 }
 
 input:not([type=submit]):focus, textarea:focus {
@@ -145,18 +160,20 @@ input:not([type=submit]):focus, textarea:focus {
 }
 
 .discussion {
+    padding: 5px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-around;
     width: 53.5%;
-    border: solid 2px black;
+    border: solid 4px rgb(97, 59, 32);
+    height: 60vh;
+    overflow: auto;
 }
 
 .discussion aside {
     display: flex;
     flex-direction: row;
     align-self: stretch;
+    font-family: 'Salsa', cursive;
 }
 
 .discussion div {
@@ -164,10 +181,26 @@ input:not([type=submit]):focus, textarea:focus {
     flex-direction: column;
 }
 
+.discussion h1, .connect p {
+    margin-bottom: 0;
+    text-align: right;
+}
+
 .connect {
     justify-content: flex-end;
 }
 
-.connect span {
-    text-align: right;
+.titre {
+    font-weight: bold;
+}
+
+figure {
+    display:flex;
+    justify-content: center;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+    font-size: 18pt;
 }

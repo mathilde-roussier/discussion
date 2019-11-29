@@ -20,9 +20,9 @@ else header('Location:index.php');
 
     <?php include 'include/header.php' ?>
 
-    <main>
+    <main id='main'>
 
-        <form method='POST' action='connexion.php'>
+        <form method='POST' action='connexion.php#main'>
 
             <article>
                 <label> Login </label>

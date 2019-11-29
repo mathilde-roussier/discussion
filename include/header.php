@@ -52,4 +52,8 @@
         <p> Maintenant, <br> connectes toi !</p>
     <?php } ?>
 
+    <figure>
+        <a href='#main'><img src='img/arrow.png'></a>
+    </figure>
+
 </header>

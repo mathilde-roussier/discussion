@@ -22,11 +22,11 @@ include 'include/traitement_profil.php'
 
     <?php include 'include/header.php' ?>
 
-    <main>
+    <main id='main'>
 
         <section>
 
-            <form method="POST" action="profil.php">
+            <form method="POST" action="profil.php#main">
 
                 <article>
                     <label> Login </label>

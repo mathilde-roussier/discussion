@@ -15,7 +15,6 @@ if (isset($_POST['validation']))
         $query_insertcomment = mysqli_query($connexion, $insert_comment);
 
         mysqli_close($connexion);
-        header('Location:discussion.php');
     }
 } 
 

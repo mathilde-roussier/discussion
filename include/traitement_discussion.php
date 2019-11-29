@@ -3,7 +3,7 @@
 <?php
 
 $connexion = mysqli_connect('localhost', 'root', '', 'discussion');
-$recup_message = "SELECT message,login,date FROM messages JOIN utilisateurs ON messages.id_utilisateur = utilisateurs.id ORDER BY date ASC";
+$recup_message = "SELECT message,login,date FROM messages JOIN utilisateurs ON messages.id_utilisateur = utilisateurs.id ORDER BY date DESC";
 $query_recupmessage = mysqli_query($connexion, $recup_message);
 $messages = mysqli_fetch_all($query_recupmessage, MYSQLI_ASSOC);
 
@@ -20,8 +20,8 @@ while ($i < $taille) {
 
         <aside class='connect'>
             <div>
-                <span> <?php echo $login . " Le " . $date . " :" ?> </span>
-                <span> <?php echo $messages[$i]['message'] ?> </span>
+                <h1 class="titre"> <?php echo $login . " Le " . $date . " :" ?> </h1>
+                <p> <?php echo $messages[$i]['message'] ?> </p>
             </div>
         </aside>
 
@@ -29,8 +29,8 @@ while ($i < $taille) {
 
         <aside>
             <div>
-                <span> <?php echo $login . " Le " . $date . ":" ?> </span>
-                <span> <?php echo $messages[$i]['message'] ?> </span>
+                <h1 class="titre"> <?php echo $login . " Le " . $date . " :" ?> </h1>
+                <p> <?php echo $messages[$i]['message'] ?> </p>
             </div>
         </aside>
 

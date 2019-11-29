@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-if (isset($_SESSION['login'])) 
-{ } 
-else header('Location:index.php');
+if (isset($_SESSION['login'])) { } else header('Location:index.php');
+
+include 'include/traitement_commentaire.php';
 ?>
 
 <!doctype html>
@@ -20,19 +20,19 @@ else header('Location:index.php');
 
     <?php include 'include/header.php' ?>
 
-    <main id='chat'>
+    <main id='main'>
 
         <section>
             <article class='discussion'>
                 <?php include 'include/traitement_discussion.php' ?>
             </article>
 
-            <form class='commentaire' method='POST' action='discussion.php #chat'>
+            <form class='commentaire' method='POST' action='discussion.php#main'>
+                
                 <textarea name="commentaire" placeholder='Votre commentaire.. (140 max)' maxlength="140"></textarea>
 
                 <input type='submit' name='validation' value='Envoyer' />
 
-                <?php include 'include/traitement_commentaire.php'; ?>
             </form>
         </section>
 
