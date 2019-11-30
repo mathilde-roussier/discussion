@@ -27,7 +27,7 @@ if(isset($_POST['profil']))
     {
         if($login != $resultat_recupdata['login'])
         {
-            $requete_verif = "SELECT login FROM utilisateurs WHERE login = '$login'";
+            $requete_verif = "SELECT login FROM utilisateurs WHERE login = '".$login."'";
             $query_verif = mysqli_query($connexion,$requete_verif);
             $resultat_verif = mysqli_fetch_assoc($query_verif);
             

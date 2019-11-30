@@ -7,7 +7,7 @@ if (isset($_POST['connexion'])) {
     $password = $_POST['password'];
 
     $connexion = mysqli_connect('localhost', 'root', '', 'discussion');
-    $recup_inscri = "SELECT * from utilisateurs WHERE login = '$login'";
+    $recup_inscri = "SELECT * from utilisateurs WHERE login = '".$login."'";
     $query_recupinscri = mysqli_query($connexion, $recup_inscri);
     $resultat_recupinscri = mysqli_fetch_assoc($query_recupinscri);
     // var_dump($resultat_recupinscri);

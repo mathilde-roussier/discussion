@@ -29,7 +29,7 @@ include 'include/traitement_commentaire.php';
 
             <form class='commentaire' method='POST' action='discussion.php#main'>
                 
-                <textarea name="commentaire" placeholder='Votre commentaire.. (140 max)' maxlength="140"></textarea>
+                <textarea name="commentaire" placeholder='Votre commentaire.. (140 max)' maxlength="140" required></textarea>
 
                 <input type='submit' name='validation' value='Envoyer' />
 

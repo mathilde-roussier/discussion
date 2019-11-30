@@ -1,3 +1,4 @@
+<!-- Traitement déconnexion --> 
 
 <?php
 session_start();
